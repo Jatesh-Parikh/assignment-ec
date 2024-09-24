@@ -47,7 +47,7 @@ const data = [
 const SecondSection = () => {
   return (
     <motion.section
-      className="mx-auto max-w-[1440px] px-8 py-12 min-h-screen"
+      className="mx-auto max-w-[1440px] px-8 py-14 min-h-screen"
       id="community"
     >
       <motion.div

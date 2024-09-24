@@ -30,7 +30,7 @@ const data = [
 const ThirdSection = () => {
   return (
     <section
-      className="mx-auto max-w-[1440px] px-8 py-12 min-h-screen"
+      className="mx-auto max-w-[1440px] px-8 py-14 min-h-screen"
       id="solutions"
     >
       <h1 className="text-4xl md:text-5xl py-4 px-4">

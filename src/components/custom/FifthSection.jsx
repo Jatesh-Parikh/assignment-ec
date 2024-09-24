@@ -13,7 +13,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 const FifthSection = () => {
   return (
     <section
-      className="mx-auto max-w-[1440px] px-4 md:px-8 py-12 min-h-screen"
+      className="mx-auto max-w-[1440px] px-4 md:px-8 py-14 min-h-screen"
       id="pricing"
     >
       <h1 className="text-4xl md:text-5xl py-4 px-4">Pricing</h1>
