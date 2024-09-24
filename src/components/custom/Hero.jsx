@@ -15,7 +15,7 @@ const Hero = () => {
         alt="mesh"
         className="absolute md:inset-0 opacity-15 flex items-center justify-center"
       />
-      <div className="flex flex-col justify-center items-center">
+      <div className="flex flex-col justify-center items-center text-center">
         <h1 className="font-bold font-serif text-5xl lg:text-7xl py-12 bg-gradient-to-r from-pink-500 to-purple-600 bg-clip-text text-transparent">
           Bird
         </h1>

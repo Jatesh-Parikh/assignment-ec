@@ -36,7 +36,7 @@ const data = [
 const FirstSection = () => {
   return (
     <section
-      className="mx-auto max-w-[1440px] px-8 py-24 md:h-[600px] h-[400px]"
+      className="mx-auto max-w-[1440px] px-8 py-20 md:py-24 md:h-[600px] h-[400px]"
       id="products"
     >
       <Carousel
