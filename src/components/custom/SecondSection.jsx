@@ -62,20 +62,11 @@ const SecondSection = () => {
           resources, networking opportunities, and expert advice.
         </h3>
       </motion.div>
-      <motion.div
-        className="grid grid-cols-1 md:grid-cols-3 gap-2 md:gap-8 py-8 px-4 my-8"
-        initial={{ opacity: 0, y: 50 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 2, delay: 0.5 }}
-        staggerChildren={1}
-      >
+      <motion.div className="grid grid-cols-1 md:grid-cols-3 gap-2 md:gap-8 py-8 px-4 my-8">
         {data.map((item, index) => (
-          <motion.Card
+          <Card
             className="hover:shadow-xl cursor-pointer duration-200 border border-black/15 border-solid rounded-xl"
             key={index}
-            initial={{ y: -50 }}
-            animate={{ y: 0 }}
-            transition={{ duration: 1 }}
           >
             <CardHeader>
               <CardTitle className="font-bold text-md text-slate-600 px-3">
@@ -95,7 +86,7 @@ const SecondSection = () => {
                 <p className="text-sm font-light -mt-1">{item.position}</p>
               </div>
             </CardContent>
-          </motion.Card>
+          </Card>
         ))}
       </motion.div>
     </motion.section>

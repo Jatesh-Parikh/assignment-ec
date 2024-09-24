@@ -16,12 +16,38 @@ import {
 } from "@/components/ui/sheet";
 
 import Logo from "../../assets/logo.svg";
+import { useEffect, useState } from "react";
 
 const Header = () => {
+  const [overViewportHeight, setOverViewportHeight] = useState(false);
+
+  const handleScroll = () => {
+    const scrollY = window.scrollY;
+    const scrollHeight = document.documentElement.scrollHeight;
+    const clientHeight = document.documentElement.clientHeight;
+    const scrollPercentage = (scrollY / (scrollHeight - clientHeight)) * 100;
+
+    if (scrollPercentage > 16.1) {
+      // ScrollY has exceeded 100%
+      setOverViewportHeight(true);
+    } else {
+      setOverViewportHeight(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
     <header
-      className="max-w-[1440px] mx-auto flex justify-between items-center py-4 px-8
-    sticky top-0 bg-white z-50"
+      className={`flex justify-between items-center py-4 px-8 sticky top-0 ${
+        overViewportHeight ? "bg-white" : "bg-[#EAF3FA]"
+      } z-50`}
     >
       <a href="/">
         <img src={Logo} alt="logo" className="h-10 w-10" />
