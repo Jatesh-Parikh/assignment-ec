@@ -121,10 +121,14 @@ const Header = () => {
               </SheetClose>
             </SheetTitle>
             <SheetTitle className="hover:text-slate-500 duration-200 cursor-pointer">
-              Pricing
+              <SheetClose asChild>
+                <a href="#pricing">Pricing</a>
+              </SheetClose>
             </SheetTitle>
             <SheetTitle className="hover:text-slate-500 duration-200 cursor-pointer">
-              Contact
+              <SheetClose asChild>
+                <a href="#contact"> Contact</a>
+              </SheetClose>
             </SheetTitle>
           </SheetContent>
         </Sheet>
