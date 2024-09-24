@@ -4,17 +4,17 @@ This project is a React application built using Vite and showcases the use of Sh
 
 ## Project Setup
 
-Frontend: React with Vite
-Styling: Shadcn UI and Tailwind CSS
-Animations: Framer Motion
+- Frontend: React with Vite
+- Styling: Shadcn UI and Tailwind CSS
+- Animations: Framer Motion
 
 ### Getting Started
 
-Clone the repository: git clone https://github.com/Jatesh-Parikh/assignment-ec.git
-Install dependencies: npm install
-Start the development server: npm run dev
+- Clone the repository: git clone https://github.com/Jatesh-Parikh/assignment-ec.git
+- Install dependencies: npm install
+- Start the development server: npm run dev
 
 ### Features
 
-Integration of Shadcn UI components for a consistent and modern user interface.
-Implementation of Framer Motion for smooth and engaging animations.
+- Integration of Shadcn UI components for a consistent and modern user interface.
+- Implementation of Framer Motion for smooth and engaging animations.
