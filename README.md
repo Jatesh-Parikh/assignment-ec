@@ -1,8 +1,8 @@
 # React + Vite
 
-This project is a React application built using Vite and showcases the use of Shadcn UI components and Framer Motion for animations.
+## This project is a React application built using Vite + Tailwind CSS and showcases the use of Shadcn UI components and Framer Motion for animations
 
-## Project Setup
+### Project Setup
 
 - Frontend: React with Vite
 - Styling: Shadcn UI and Tailwind CSS

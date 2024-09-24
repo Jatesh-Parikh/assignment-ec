@@ -27,6 +27,8 @@ const Header = () => {
     const clientHeight = document.documentElement.clientHeight;
     const scrollPercentage = (scrollY / (scrollHeight - clientHeight)) * 100;
 
+    // console.log(scrollPercentage);
+
     if (scrollPercentage > 16.1) {
       // ScrollY has exceeded 100%
       setOverViewportHeight(true);
