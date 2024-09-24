@@ -78,10 +78,14 @@ const Header = () => {
               </Button>
             </NavigationMenuItem>
             <NavigationMenuItem>
-              <Button variant="ghost">Pricing</Button>
+              <Button variant="ghost">
+                <a href="#pricing">Pricing</a>
+              </Button>
             </NavigationMenuItem>
             <NavigationMenuItem>
-              <Button variant="ghost">Contact</Button>
+              <Button variant="ghost">
+                <a href="#contact">Contact</a>
+              </Button>
             </NavigationMenuItem>
           </NavigationMenuList>
         </NavigationMenu>
