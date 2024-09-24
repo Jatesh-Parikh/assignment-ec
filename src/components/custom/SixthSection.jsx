@@ -89,7 +89,7 @@ const SixthSection = () => {
                 <input
                   type="text"
                   placeholder="Last Name"
-                  className="outline-none py-2 px-1 md:px-4 border border-solid border-black/15 rounded-lg w-full"
+                  className="outline-none py-2 px-1 md:px-4 border border-solid border-black/15 rounded-lg w-full mt-[4px]"
                   value={lastName}
                   onChange={(e) => setLastName(e.target.value)}
                 />
