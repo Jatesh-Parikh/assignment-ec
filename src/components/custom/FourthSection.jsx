@@ -57,7 +57,7 @@ const FourthSection = () => {
           x: 0, // Slide in to its original position
           transition: "all 0.01s cubic-bezier(0.17, 0.55, 0.55, 1) 1s",
         }}
-        viewport={{ once: true }}
+        viewport={{ once: true, margin: "-200px" }}
       >
         <h1 className="text-4xl md:text-5xl py-4 px-4">Resources</h1>
         <h3 className="text-xl px-4 text-balance">
