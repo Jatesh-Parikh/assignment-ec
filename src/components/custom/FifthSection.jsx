@@ -7,6 +7,7 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
+import { motion } from "framer-motion";
 import { Check, X } from "lucide-react";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
@@ -16,13 +17,27 @@ const FifthSection = () => {
       className="mx-auto max-w-[1440px] px-4 md:px-8 py-14 min-h-screen"
       id="pricing"
     >
-      <h1 className="text-4xl md:text-5xl py-4 px-4">Pricing</h1>
-      <h3 className="text-xl px-4 text-balance">
-        Choose the plan that best fits your business needs. Our flexible pricing
-        options offer a range of features, from basic to advanced. Enjoy
-        unlimited products, customizable themes, and advanced analytics. <br />
-        Start selling online today!
-      </h3>
+      <motion.div
+        initial={{
+          opacity: 0,
+          x: -1000,
+        }}
+        whileInView={{
+          opacity: 1,
+          x: 0, // Slide in to its original position
+          transition: "all 0.01s cubic-bezier(0.17, 0.55, 0.55, 1) 1s",
+        }}
+        viewport={{ once: true }}
+      >
+        <h1 className="text-4xl md:text-5xl py-4 px-4">Pricing</h1>
+        <h3 className="text-xl px-4 text-balance">
+          Choose the plan that best fits your business needs. Our flexible
+          pricing options offer a range of features, from basic to advanced.
+          Enjoy unlimited products, customizable themes, and advanced analytics.{" "}
+          <br />
+          Start selling online today!
+        </h3>
+      </motion.div>
       <Tabs
         defaultValue="free"
         className="w-[350px] md:max-w-[800px] lg:min-w-[900px] mx-auto mt-12"

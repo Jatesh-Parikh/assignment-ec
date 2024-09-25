@@ -46,14 +46,21 @@ const data = [
 
 const SecondSection = () => {
   return (
-    <motion.section
+    <section
       className="mx-auto max-w-[1440px] px-8 py-14 min-h-screen"
       id="community"
     >
       <motion.div
-        initial={{ opacity: 0, y: 50 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 2 }}
+        initial={{
+          opacity: 0,
+          x: -1000,
+        }}
+        whileInView={{
+          opacity: 1,
+          x: 0, // Slide in to its original position
+          transition: "all 0.01s cubic-bezier(0.17, 0.55, 0.55, 1) 1s",
+        }}
+        viewport={{ once: true }}
       >
         <h1 className="text-4xl md:text-5xl py-4 px-4">Community</h1>
         <h3 className="text-xl px-4 text-balance">
@@ -62,7 +69,7 @@ const SecondSection = () => {
           resources, networking opportunities, and expert advice.
         </h3>
       </motion.div>
-      <motion.div className="grid grid-cols-1 md:grid-cols-3 gap-2 md:gap-8 py-8 px-4 my-8">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-2 md:gap-8 py-8 px-4 my-8">
         {data.map((item, index) => (
           <Card
             className="hover:shadow-xl cursor-pointer duration-200 border border-black/15 border-solid rounded-xl"
@@ -88,8 +95,8 @@ const SecondSection = () => {
             </CardContent>
           </Card>
         ))}
-      </motion.div>
-    </motion.section>
+      </div>
+    </section>
   );
 };
 
