@@ -18,3 +18,5 @@
 
 - Integration of Shadcn UI components for a consistent and modern user interface.
 - Implementation of Framer Motion for smooth and engaging animations.
+- Vite: Lightning-fast development server and bundling.
+- Tailwind CSS: Utility-first CSS framework for rapid UI development.
